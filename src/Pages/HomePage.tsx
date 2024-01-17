@@ -4,38 +4,9 @@ import Mission from "../assets/images/illustrations/mission.svg";
 import Vision from "../assets/images/illustrations/vision.svg";
 import Objectives from "../assets/images/objective.png";
 import Check from "../assets/images/check.svg";
-import ProjectImageOne from "../assets/images/Projects/front-image-1.png";
-import ProjectImageTwo from "../assets/images/Projects/front-image-2.png";
+
 import BookLaunch from "../assets/images/Book-launch.png";
 import Founder from "../assets/images/founder.png";
-import Marquee from "react-fast-marquee";
-
-import Gallery1 from "../assets/images/Gallery/Rectangle 17-1.png";
-import Gallery2 from "../assets/images/Gallery/Rectangle 17.png";
-import Gallery3 from "../assets/images/Gallery/Rectangle 18-1.png";
-import Gallery4 from "../assets/images/Gallery/Rectangle 18.png";
-import Gallery5 from "../assets/images/Gallery/Rectangle 19-1.png";
-import Gallery6 from "../assets/images/Gallery/Rectangle 19.png";
-import Gallery7 from "../assets/images/Gallery/Rectangle 20-1.png";
-import Gallery8 from "../assets/images/Gallery/Rectangle 20-2.png";
-import Gallery9 from "../assets/images/Gallery/Rectangle 20-3.png";
-import Gallery10 from "../assets/images/Gallery/Rectangle 20.png";
-
-// Farm Visit
-import Image1 from "../assets/images/Projects/MFS/Rectangle 27.png";
-import Image2 from "../assets/images/Projects/MFS/Rectangle 28.png";
-import Image3 from "../assets/images/Projects/MFS/Rectangle 29.png";
-import Image4 from "../assets/images/Projects/MFS/Rectangle 30-1.png";
-import Image5 from "../assets/images/Projects/MFS/Rectangle 30.png";
-import Image6 from "../assets/images/Projects/MFS/Rectangle 31.png";
-
-// Donation
-import Image11 from "../assets/images/Projects/Donation/Rectangle 27.png";
-import Image21 from "../assets/images/Projects/Donation/Rectangle 28.png";
-import Image31 from "../assets/images/Projects/Donation/Rectangle 29.png";
-import Image41 from "../assets/images/Projects/Donation/Rectangle 30-1.png";
-import Image51 from "../assets/images/Projects/Donation/Rectangle 30.png";
-// import Image61 from "../assets/images/Projects/Donation/";
 
 // Icons
 import Date from "../assets/images/icons/date.svg";
@@ -226,32 +197,7 @@ const HomePage = () => {
                 Our Gallery
               </h1>
             </div>
-            <div>
-              <Marquee pauseOnHover>
-                <img src={Gallery1} alt="" className="mx-2" />
-                <img src={Gallery2} alt="" className="mx-2" />
-                <img src={Gallery3} alt="" className="mx-2" />
-                <img src={Gallery4} alt="" className="mx-2" />
-                <img src={Gallery5} alt="" className="mx-2" />
-                <img src={Gallery6} alt="" className="mx-2" />
-                <img src={Gallery7} alt="" className="mx-2" />
-                <img src={Gallery8} alt="" className="mx-2" />
-                <img src={Gallery9} alt="" className="mx-2" />
-                <img src={Gallery10} alt="" className="mx-2" />
-              </Marquee>
-              <Marquee pauseOnHover direction="right" className="mt-4">
-                <img src={Gallery1} alt="" className="mx-2" />
-                <img src={Gallery2} alt="" className="mx-2" />
-                <img src={Gallery3} alt="" className="mx-2" />
-                <img src={Gallery4} alt="" className="mx-2" />
-                <img src={Gallery5} alt="" className="mx-2" />
-                <img src={Gallery6} alt="" className="mx-2" />
-                <img src={Gallery7} alt="" className="mx-2" />
-                <img src={Gallery8} alt="" className="mx-2" />
-                <img src={Gallery9} alt="" className="mx-2" />
-                <img src={Gallery10} alt="" className="mx-2" />
-              </Marquee>
-            </div>
+            <Gallery />
           </div>
 
           <div className="px-4 py-8 lg:py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl">
@@ -398,90 +344,10 @@ export const OurObjectives = (props: ObjectivesProps) => {
   );
 };
 
-export const ProjectOne = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
-  return (
-    <div>
-      <div className="lg:flex gap-20 items-center">
-        <img src={ProjectImageOne} alt="" />
-        <div className="">
-          <p className="mb-4">Donations / Farming</p>
-          <p className="lg:text-4xl text-2xl font-bold">
-            DAISY IN THE FARM + MFCS Visit.
-          </p>
-          <p className="mt-2 lg:mt-6 text-lg">
-            Daisy Nyongesa Foundation is dedicated to empowering youth and women
-            through Education, Mentorship, Entrepreneurship, and Leadership,
-            fostering a future where every voice leads and inspires.
-          </p>
-          <button
-            onClick={openModal}
-            className="text-accentTwo py-4 mt-8 border-2 border-accentTwo px-12 text-lg font-semibold rounded-lg"
-          >
-            View Gallery
-          </button>
-          <Modals
-            isOpen={isModalOpen}
-            onClose={closeModal}
-            image1={Image1}
-            image2={Image2}
-            image3={Image3}
-            image4={Image4}
-            image5={Image5}
-            image6={Image6}
-          />
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export const ProjectTwo = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const openModal = () => setIsModalOpen(true);
-  const closeModal = () => setIsModalOpen(false);
-  return (
-    <div>
-      <div className="flex flex-col-reverse lg:flex-row lg:gap-20 items-center">
-        <div className="">
-          <p className="mb-4">Donations / Persons with Disability</p>
-          <p className="lg:text-4xl text-2xl font-bold">Wheelchair Donation.</p>
-          <p className="lg:mt-6 mt-2 text-lg">
-            Daisy Nyongesa Foundation is dedicated to empowering youth and women
-            through Education, Mentorship, Entrepreneurship, and Leadership,
-            fostering a future where every voice leads and inspires.
-          </p>
-          <button
-            onClick={openModal}
-            className="text-accentTwo py-4 mt-8 border-2 border-accentTwo px-12 text-lg font-semibold rounded-lg"
-          >
-            View Gallery
-          </button>
-          <Modals
-            isOpen={isModalOpen}
-            onClose={closeModal}
-            image1={Image11}
-            image2={Image21}
-            image3={Image31}
-            image4={Image41}
-            image5={Image51}
-            image6={""}
-          />
-        </div>
-        <img src={ProjectImageTwo} alt="" />
-      </div>
-    </div>
-  );
-};
-
 import Star from "../assets/images/icons/star.svg";
 import { Footer } from "../components/Footer";
-import { useState } from "react";
-import Modals from "../components/Modals";
+import { ProjectOne, ProjectTwo } from "../components/ProjectCards";
+import Gallery from "../components/Gallery";
 
 export const Testimonial = () => {
   return (

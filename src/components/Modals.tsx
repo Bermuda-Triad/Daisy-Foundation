@@ -45,7 +45,7 @@ const Modals: React.FC<ModalProps> = ({
   return (
     <div className="fixed inset-0 bg-textOne bg-opacity-70 overflow-y-auto h-full w-full z-50">
       <div
-        className="relative top-20 lg:mx-auto border mx-4 lg:w-3/4 shadow-lg rounded-md bg-textThree"
+        className="relative top-20 lg:mx-auto border mx-4 p-1 lg:w-3/4 shadow-lg rounded-md bg-textThree"
         ref={modalRef}
       >
         <div className="grid grid-cols-2 lg:grid-cols-3">
