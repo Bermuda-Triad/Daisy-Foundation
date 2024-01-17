@@ -21,6 +21,22 @@ import Gallery8 from "../assets/images/Gallery/Rectangle 20-2.png";
 import Gallery9 from "../assets/images/Gallery/Rectangle 20-3.png";
 import Gallery10 from "../assets/images/Gallery/Rectangle 20.png";
 
+// Farm Visit
+import Image1 from "../assets/images/Projects/MFS/Rectangle 27.png";
+import Image2 from "../assets/images/Projects/MFS/Rectangle 28.png";
+import Image3 from "../assets/images/Projects/MFS/Rectangle 29.png";
+import Image4 from "../assets/images/Projects/MFS/Rectangle 30-1.png";
+import Image5 from "../assets/images/Projects/MFS/Rectangle 30.png";
+import Image6 from "../assets/images/Projects/MFS/Rectangle 31.png";
+
+// Donation
+import Image11 from "../assets/images/Projects/Donation/Rectangle 27.png";
+import Image21 from "../assets/images/Projects/Donation/Rectangle 28.png";
+import Image31 from "../assets/images/Projects/Donation/Rectangle 29.png";
+import Image41 from "../assets/images/Projects/Donation/Rectangle 30-1.png";
+import Image51 from "../assets/images/Projects/Donation/Rectangle 30.png";
+// import Image61 from "../assets/images/Projects/Donation/";
+
 // Icons
 import Date from "../assets/images/icons/date.svg";
 import Time from "../assets/images/icons/time.svg";
@@ -383,6 +399,10 @@ export const OurObjectives = (props: ObjectivesProps) => {
 };
 
 export const ProjectOne = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
   return (
     <div>
       <div className="lg:flex gap-20 items-center">
@@ -397,9 +417,22 @@ export const ProjectOne = () => {
             through Education, Mentorship, Entrepreneurship, and Leadership,
             fostering a future where every voice leads and inspires.
           </p>
-          <button className="text-accentTwo py-4 mt-8 border-2 border-accentTwo px-12 text-lg font-semibold rounded-lg">
+          <button
+            onClick={openModal}
+            className="text-accentTwo py-4 mt-8 border-2 border-accentTwo px-12 text-lg font-semibold rounded-lg"
+          >
             View Gallery
           </button>
+          <Modals
+            isOpen={isModalOpen}
+            onClose={closeModal}
+            image1={Image1}
+            image2={Image2}
+            image3={Image3}
+            image4={Image4}
+            image5={Image5}
+            image6={Image6}
+          />
         </div>
       </div>
     </div>
@@ -407,6 +440,10 @@ export const ProjectOne = () => {
 };
 
 export const ProjectTwo = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
   return (
     <div>
       <div className="flex flex-col-reverse lg:flex-row lg:gap-20 items-center">
@@ -418,9 +455,22 @@ export const ProjectTwo = () => {
             through Education, Mentorship, Entrepreneurship, and Leadership,
             fostering a future where every voice leads and inspires.
           </p>
-          <button className="text-accentTwo py-4 mt-8 border-2 border-accentTwo px-12 text-lg font-semibold rounded-lg">
+          <button
+            onClick={openModal}
+            className="text-accentTwo py-4 mt-8 border-2 border-accentTwo px-12 text-lg font-semibold rounded-lg"
+          >
             View Gallery
           </button>
+          <Modals
+            isOpen={isModalOpen}
+            onClose={closeModal}
+            image1={Image11}
+            image2={Image21}
+            image3={Image31}
+            image4={Image41}
+            image5={Image51}
+            image6={""}
+          />
         </div>
         <img src={ProjectImageTwo} alt="" />
       </div>
@@ -430,6 +480,8 @@ export const ProjectTwo = () => {
 
 import Star from "../assets/images/icons/star.svg";
 import { Footer } from "../components/Footer";
+import { useState } from "react";
+import Modals from "../components/Modals";
 
 export const Testimonial = () => {
   return (
