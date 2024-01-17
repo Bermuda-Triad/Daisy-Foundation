@@ -119,13 +119,13 @@ const HomePage = () => {
                 <div className="flex justify-center mb-4">
                   <img src={Mission} alt="" className="lg:w-32 w-20" />
                 </div>
-                <p className="font-bold text-2xl text-center">Husika</p>
+                <p className="font-bold text-2xl text-center">Elimika</p>
               </div>
               <div className="bg-accentBackgroundOne py-8">
                 <div className="flex justify-center mb-4">
                   <img src={Mission} alt="" className="lg:w-32 w-20" />
                 </div>
-                <p className="font-bold text-2xl text-center">Husika</p>
+                <p className="font-bold text-2xl text-center">Badilika</p>
               </div>
             </div>
 
