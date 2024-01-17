@@ -7,6 +7,7 @@ import Check from "../assets/images/check.svg";
 import ProjectImageOne from "../assets/images/Projects/front-image-1.png";
 import ProjectImageTwo from "../assets/images/Projects/front-image-2.png";
 import BookLaunch from "../assets/images/Book-launch.png";
+import Founder from "../assets/images/founder.png";
 import Marquee from "react-fast-marquee";
 
 import Gallery1 from "../assets/images/Gallery/Rectangle 17-1.png";
@@ -25,6 +26,13 @@ import Date from "../assets/images/icons/date.svg";
 import Time from "../assets/images/icons/time.svg";
 import Location from "../assets/images/icons/location.svg";
 import Dress from "../assets/images/icons/Dress.svg";
+
+// Logos
+import LogoOne from "../assets/images/Logos/logos/IMG-20231207-WA0026 1.svg";
+import LogoTwo from "../assets/images/Logos/logos/Martine's Angel's Program.svg";
+import LogoThree from "../assets/images/Logos/logos/NYOROTIS COOPERATIVE COCIETY.svg";
+import LogoFour from "../assets/images/Logos/logos/Screenshot from 2024-01-14 14-53-36 1.svg";
+import LogoFive from "../assets/images/Logos/logos/Screenshot from 2024-01-14 14-54-36.svg";
 
 const HomePage = () => {
   return (
@@ -98,7 +106,7 @@ const HomePage = () => {
 
           <div className="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl">
             <div className="grid lg:grid-cols-5 gap-4 grid-cols-2">
-              <h1 className="lg:col-span-2 text-accentOne font-bold lg:font-black text-4xl lg:text-6xl leading-none text-left">
+              <h1 className="lg:col-span-2 text-accentOne font-bold text-4xl lg:text-6xl leading-none text-left">
                 Our Guiding Principles
               </h1>
               <div className="bg-accentBackgroundOne py-8">
@@ -135,7 +143,7 @@ const HomePage = () => {
                     </p>
                     <div className="w-20 h-2 bg-accentOne rounded-full "></div>
                   </div>
-                  <h1 className="lg:col-span-2 text-textOne font-bold lg:font-black text-4xl lg:text-6xl leading-none text-left">
+                  <h1 className="lg:col-span-2 text-textOne font-bold text-4xl lg:text-6xl leading-none text-left">
                     Our Objectives
                   </h1>
                   <div className="mt-8 lg:w-3/4">
@@ -179,7 +187,7 @@ const HomePage = () => {
                 </p>
                 <div className="w-20 h-2 bg-accentOne rounded-full "></div>
               </div>
-              <h1 className="lg:col-span-2 text-textOne font-bold lg:font-black text-4xl lg:text-6xl leading-none text-left">
+              <h1 className="lg:col-span-2 text-textOne font-bold text-4xl lg:text-6xl leading-none text-left">
                 Our Projects
               </h1>
               <div className="mt-16">
@@ -198,7 +206,7 @@ const HomePage = () => {
                 </p>
                 <div className="w-20 h-2 bg-accentOne rounded-full "></div>
               </div>
-              <h1 className="lg:col-span-2 text-textOne font-bold lg:font-black text-4xl lg:text-6xl leading-none text-left">
+              <h1 className="lg:col-span-2 text-textOne font-bold text-4xl lg:text-6xl leading-none text-left">
                 Our Gallery
               </h1>
             </div>
@@ -230,7 +238,7 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl">
+          <div className="px-4 py-8 lg:py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl">
             <div className="lg:flex items-center lg:gap-10">
               <div className="">
                 <div className="mb-4 mt-4 lg:mt-0">
@@ -239,7 +247,7 @@ const HomePage = () => {
                   </p>
                   <div className="w-20 h-2 bg-accentOne rounded-full "></div>
                 </div>
-                <h1 className="lg:w-4/5 lg:col-span-2 text-textOne font-bold lg:font-black text-4xl lg:text-6xl leading-none text-left">
+                <h1 className="lg:w-4/5 lg:col-span-2 text-textOne font-bold text-4xl lg:text-6xl leading-none text-left">
                   Ready to Join our{" "}
                   <span className="text-accentOne"> Book Launch</span> Event
                 </h1>
@@ -294,6 +302,64 @@ const HomePage = () => {
               </div>
               <img src={BookLaunch} alt="" />
             </div>
+          </div>
+
+          <div className="py-8 lg:py-16 px-4">
+            <h1 className="text-textOne font-bold text-4xl lg:text-6xl leading-none text-center">
+              Meet our <span className="text-accentOne"> Founder</span>
+            </h1>
+            <div className="flex justify-center mt-8">
+              <img src={Founder} alt="" />
+            </div>
+            <p className="text-center text-3xl font-bold text-textOne mt-8">
+              Daisy Kanainza Nyongesa.
+            </p>
+            <p className="text-center text-lg text-textOne mt-3 font-medium">
+              CEO, <br></br> Daisy Nyongesa Foundation
+            </p>
+          </div>
+
+          <div className="bg-accentBackgroundOne">
+            <div className="px-4 py-8 lg:py-20 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl">
+              <div className="mb-4 mt-4 lg:mt-0">
+                <p className="uppercase font-semibold mb-1 text-textTwo text-center">
+                  Testimonials
+                </p>
+                <div className="w-20 h-2 bg-accentOne rounded-full mx-auto"></div>
+              </div>
+              <h1 className="lg:col-span-2 text-textOne font-bold text-4xl lg:text-6xl leading-none text-center">
+                Success Stories
+              </h1>
+
+              <div className="grid lg:grid-cols-3 gap-4 mt-8">
+                <Testimonial />
+                <Testimonial />
+                <Testimonial />
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="px-4 py-8 lg:py-32 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl">
+              <h1 className="lg:col-span-2 text-textOne font-bold text-4xl lg:text-6xl leading-none text-center">
+                Our Partners
+              </h1>
+              <div className="grid grid-cols-2 items-center lg:flex justify-center gap-10 mt-8">
+                <img src={LogoOne} alt="" />
+                <img src={LogoTwo} alt="" />
+                <img src={LogoThree} alt="" />
+                <img src={LogoFour} alt="" />
+                <img src={LogoFive} alt="" />
+              </div>
+            </div>
+          </div>
+          <footer className="bg-accentBackgroundOne">
+            <Footer />
+          </footer>
+          <div className="bg-accentOne">
+            <p className="text-sm text-center text-textThree py-2">
+              © Copyright Daisy Nyongesa Foundation 2024 || All Rights Reserved.
+            </p>
           </div>
         </div>
       </div>
@@ -357,6 +423,31 @@ export const ProjectTwo = () => {
           </button>
         </div>
         <img src={ProjectImageTwo} alt="" />
+      </div>
+    </div>
+  );
+};
+
+import Star from "../assets/images/icons/star.svg";
+import { Footer } from "../components/Footer";
+
+export const Testimonial = () => {
+  return (
+    <div>
+      <div className="text-lg bg-textThree p-6 rounded-lg">
+        <p className="font-bold">Grace Kwamboka</p>
+        <p className=" font-medium">MFCS</p>
+        <p className=" mt-4">
+          “Less than 24h turn around. Easy commu. Did exactly as offered, all
+          around a perfect experience.”
+        </p>
+        <div className="flex items-center gap-2 mt-8">
+          <img src={Star} alt="" />
+          <img src={Star} alt="" />
+          <img src={Star} alt="" />
+          <img src={Star} alt="" />
+          <img src={Star} alt="" />
+        </div>
       </div>
     </div>
   );
