@@ -1,5 +1,5 @@
 import Hero from "../assets/images/Hero.png";
-import Logo1 from "../assets/images/Logos/flat-logo.svg";
+import Logo2 from "../assets/images/Logos/original-logo.svg";
 import Mission from "../assets/images/illustrations/mission.svg";
 import Vision from "../assets/images/illustrations/vision.svg";
 import Objectives from "../assets/images/objective.png";
@@ -30,23 +30,30 @@ const HomePage = () => {
           <div className="grid lg:grid-cols-2 mx-auto md:pl-8 xl:pl-20 sm:max-w-xl md:max-w-full">
             <div className="max-w-xl mx-auto lg:max-w-screen-2xl px-4">
               <div className="lg:max-w-2xl lg:mb-0 lg:ml-8">
-                <div className="lg:mb-32 mt-4 mb-8">
-                  <img src={Logo1} alt="" />
+                <div className="lg:mb-24 mt-4 mb-8">
+                  <img
+                    src={Logo2}
+                    alt=""
+                    className="mx-auto lg:mx-0 w-32 lg:w-40"
+                  />
                 </div>
                 <div>
-                  <h1 className="text-textFour font-extrabold lg:font-black text-4xl lg:text-7xl xl:text-[72px] leading-none text-left">
+                  <h1 className="text-textFour font-extrabold lg:font-black text-4xl lg:text-7xl xl:text-[72px] leading-none text-center lg:text-left">
                     Empowering Voices, Shaping Futures.
                   </h1>
-                  <p className="text-xl lg:text-4xl font-semibold mt-4 text-left text-textOne">
+                  {/* <p className="text-xl lg:text-4xl font-semibold mt-4 text-left text-textOne">
                     Championing Youth and Women for Societal Transformation.
+                  </p> */}
+                  <p className="text-textTwo mt-4 text-lg  text-center lg:text-left">
+                    Daisy Nyongesa Foundation seeks to address societal needs.
+                    This is after identifying the existing gaps in the 24
+                    constituencies of Western Kenya and analyzing the best
+                    approach in mitigating them. We are dedicated to empowering
+                    youth and women through Edication, Mentorship and
+                    Leadership, fostering a future where every voice leads and
+                    inspires.
                   </p>
-                  <p className="text-textTwo mt-4 text-left text-lg">
-                    Daisy Nyongesa Foundation is dedicated to empowering youth
-                    and women through Education, Mentorship, Entrepreneurship,
-                    and Leadership, fostering a future where every voice leads
-                    and inspires.
-                  </p>
-                  <div className="flex mt-4 lg:mt-8 mb-6 lg:mb-0">
+                  <div className="flex mt-4 lg:mt-8 mb-6 lg:mb-0 justify-center lg:justify-start">
                     <a
                       href=""
                       className="flex items-center py-3 lg:py-4 px-8 lg:px-6 rounded-full border border-accentOne hover:bg-[#1E1E1E] text-accentOne hover:text-[#fff] hover:border border-[##BABD8D] font-bold"
@@ -65,10 +72,16 @@ const HomePage = () => {
           <div>
             <div className="grid lg:grid-cols-2 md:pl-8 xl:pl-20 sm:max-w-xl md:max-w-full bg-accentBackgroundOne">
               <div className="lg:flex lg:w-2/3 gap-4 max-w-xl mx-auto lg:max-w-screen-2xl px-4 py-8 lg:py-16">
-                <img src={Mission} alt="" className="w-32 lg:w-auto" />
+                <img
+                  src={Mission}
+                  alt=""
+                  className="w-20 lg:w-auto mx-auto lg:mx-0"
+                />
                 <div className="mt-4 lg:mt-0">
-                  <p className="text-4xl font-bold pb-4">Our Mission</p>
-                  <p className="text-lg text-textTwo">
+                  <p className="text-4xl font-bold pb-4 text-center lg:text-left">
+                    Our Mission
+                  </p>
+                  <p className="text-lg text-textTwo text-center lg:text-left">
                     To be the voice of the youth and women that brings
                     development in the society through information and capacity
                     building with a focus on Education, Mentorship,
@@ -78,10 +91,16 @@ const HomePage = () => {
               </div>
               <div className="bg-accentBackgroundTwo">
                 <div className="lg:flex lg:w-2/3 gap-4 py-8 lg:py-16 lg:px-16 px-4">
-                  <img src={Vision} alt="" className="w-32 lg:w-auto" />
+                  <img
+                    src={Vision}
+                    alt=""
+                    className="w-20 lg:w-auto mx-auto lg:mx-0"
+                  />
                   <div>
-                    <p className="text-4xl font-bold pb-4">Our Vision</p>
-                    <p className="text-lg text-textTwo">
+                    <p className="text-4xl font-bold pb-4 text-center lg:text-left">
+                      Our Vision
+                    </p>
+                    <p className="text-lg text-textTwo text-center lg:text-left">
                       To rise above life challenges and be a solution-based
                       organization.
                     </p>
@@ -92,31 +111,43 @@ const HomePage = () => {
           </div>
 
           <div className="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl">
-            <div className="grid lg:grid-cols-5 gap-4 grid-cols-2">
-              <h1 className="lg:col-span-2 text-accentOne font-bold text-4xl lg:text-6xl leading-none text-left">
+            <div className="grid lg:grid-cols-5 gap-4 grid-cols-1">
+              <h1 className="lg:col-span-2 text-accentOne font-bold text-4xl lg:text-6xl leading-none text-center lg:text-left w-2/3 mx-auto">
                 Our Guiding Principles
               </h1>
               <div className="bg-accentBackgroundOne py-8">
                 <div className="flex justify-center mb-4">
-                  <img src={Mission} alt="" className="lg:w-32 w-20" />
+                  {/* <img src={Mission} alt="" className="lg:w-32 w-20" /> */}
                 </div>
                 <p className="font-bold text-2xl text-center">Husika</p>
+                <p className="text-center px-4 mt-2">
+                  We want to be involved, we want young people to be involved,
+                  we want you to be involved.{" "}
+                </p>
               </div>
               <div className="bg-accentBackgroundOne py-8">
                 <div className="flex justify-center mb-4">
-                  <img src={Mission} alt="" className="lg:w-32 w-20" />
+                  {/* <img src={Mission} alt="" className="lg:w-32 w-20" /> */}
                 </div>
                 <p className="font-bold text-2xl text-center">Elimika</p>
+                <p className="text-center px-4 mt-2">
+                  When we educate and enlighten young people, we educate the
+                  whole community
+                </p>
               </div>
               <div className="bg-accentBackgroundOne py-8">
                 <div className="flex justify-center mb-4">
-                  <img src={Mission} alt="" className="lg:w-32 w-20" />
+                  {/* <img src={Mission} alt="" className="lg:w-32 w-20" /> */}
                 </div>
                 <p className="font-bold text-2xl text-center">Badilika</p>
+                <p className="text-center px-4 mt-2">
+                  Educated and involved minds aspire to aspire invoved nation,
+                  they are change makers and advocates of development.
+                </p>
               </div>
             </div>
 
-            <div className="py-20">
+            <div className="pt-16 lg:py-20">
               <div className="lg:flex gap-16 items-center">
                 <img
                   src={Objectives}
@@ -124,18 +155,13 @@ const HomePage = () => {
                   className="border border-strokeOne"
                 />
                 <div>
-                  <div className="mb-4 mt-4 lg:mt-0">
-                    <p className="uppercase font-semibold mb-1 text-textTwo">
-                      Daisy Nyongesa Foundation
-                    </p>
-                    <div className="w-20 h-2 bg-accentOne rounded-full "></div>
-                  </div>
-                  <h1 className="lg:col-span-2 text-textOne font-bold text-4xl lg:text-6xl leading-none text-left">
-                    Our Objectives
+                  <h1 className="mt-4 lg:w-4/5 lg:col-span-2 text-textOne font-bold text-4xl lg:text-6xl leading-none text-left">
+                    Our <span className="text-accentOne">Objectives</span> and
+                    <span className="text-accentOne"> Core values</span>
                   </h1>
-                  <div className="mt-8 lg:w-3/4">
-                    <p className="px-6 mb-4 py-2 font-semibold text-textOne text-xl bg-accentBackgroundOne border-l-accentOne border-l-4 rounded-lg mt-4">
-                      Our Objectives Include:
+                  <div className="lg:mt-8 lg:w-4/5">
+                    <p className="px-6 mb-4 py-2 font-semibold text-textOne bg-accentBackgroundOne border-l-accentOne border-l-4 rounded-lg mt-4">
+                      Objectives Include:
                     </p>
                     <OurObjectives
                       description={
@@ -161,6 +187,19 @@ const HomePage = () => {
                       description={"To actualize mentorship academy."}
                     />
                   </div>
+                  <div className="lg:w-4/5">
+                    <p className="px-6 mb-4 py-2 font-semibold text-textOne bg-accentBackgroundOne border-l-accentOne border-l-4 rounded-lg mt-4">
+                      Core Values Include:
+                    </p>
+                    <div className="grid grid-cols-2 lg:grid-cols-3">
+                      <OurObjectives description={"Commitment"} />
+                      <OurObjectives description={"Integrity"} />
+                      <OurObjectives description={"Teamwork"} />
+                      <OurObjectives description={"Professionalism"} />
+                      <OurObjectives description={"Partnership"} />
+                      <OurObjectives description={"Accountability"} />
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -168,16 +207,10 @@ const HomePage = () => {
 
           <div className="bg-accentBackgroundOne">
             <div className="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl">
-              <div className="mb-4 mt-4 lg:mt-0">
-                <p className="uppercase font-semibold mb-1 text-textTwo">
-                  Daisy Nyongesa Foundation
-                </p>
-                <div className="w-20 h-2 bg-accentOne rounded-full "></div>
-              </div>
               <h1 className="lg:col-span-2 text-textOne font-bold text-4xl lg:text-6xl leading-none text-left">
                 Our Projects
               </h1>
-              <div className="mt-16">
+              <div className="mt-8 lg:mt-16">
                 <ProjectOne />
                 <div className="py-10"></div>
                 <ProjectTwo />
@@ -277,7 +310,7 @@ const HomePage = () => {
               Daisy Kanainza Nyongesa.
             </p>
             <p className="text-center text-lg text-textOne mt-3 font-medium">
-              CEO, <br></br> Daisy Nyongesa Foundation
+              Founder and CEO, <br></br> Daisy Nyongesa Foundation
             </p>
           </div>
 
@@ -306,12 +339,12 @@ const HomePage = () => {
               <h1 className="lg:col-span-2 text-textOne font-bold text-4xl lg:text-6xl leading-none text-center">
                 Our Partners
               </h1>
-              <div className="grid grid-cols-2 items-center lg:flex justify-center gap-10 mt-8">
-                <img src={LogoOne} alt="" />
-                <img src={LogoTwo} alt="" />
-                <img src={LogoThree} alt="" />
-                <img src={LogoFour} alt="" />
-                <img src={LogoFive} alt="" />
+              <div className="grid grid-cols-3 items-center lg:flex justify-center gap-10 mt-8">
+                <img src={LogoOne} alt="" className="w-28 mx-auto" />
+                <img src={LogoFive} alt="" className="w-28 mx-auto" />
+                <img src={LogoThree} alt="" className="w-28 mx-auto" />
+                <img src={LogoFour} alt="" className="w-28 mx-auto" />
+                <img src={LogoTwo} alt="" className="w-28 mx-auto" />
               </div>
             </div>
           </div>

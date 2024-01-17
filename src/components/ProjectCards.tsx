@@ -35,13 +35,19 @@ export const ProjectOne = () => {
             DAISY IN THE FARM + MFCS Visit.
           </p>
           <p className="mt-2 lg:mt-6 text-lg">
-            Daisy Nyongesa Foundation is dedicated to empowering youth and women
-            through Education, Mentorship, Entrepreneurship, and Leadership,
-            fostering a future where every voice leads and inspires.
+            We acknowledge that agriculture is the backbone of our economy.
+            Through our involvement in farming activities and projects,{" "}
+            <br></br>We endeavour to solve the following SDGs;
           </p>
+          <p className="text-lg font-semibold">#SDG 2 - Zero Hunger </p>
+          <p className="text-lg font-semibold">
+            #SDG 12 - Responsible consumption and production{" "}
+          </p>
+          <p className="text-lg font-semibold">#SDG 13 - Climate action </p>
+          <p className="text-lg font-semibold">#SDG 15 - Life on land</p>
           <button
             onClick={openModal}
-            className="text-accentTwo py-4 mt-8 border-2 border-accentTwo px-12 text-lg font-semibold rounded-lg"
+            className="text-accentTwo py-4 mt-8 border-2 border-accentTwo px-12 text-lg font-semibold rounded-lg hover:text-accentOne hover:border-accentOne"
           >
             View Gallery
           </button>
@@ -73,13 +79,13 @@ export const ProjectTwo = () => {
           <p className="mb-4">Donations / Persons with Disability</p>
           <p className="lg:text-4xl text-2xl font-bold">Wheelchair Donation.</p>
           <p className="lg:mt-6 mt-2 text-lg">
-            Daisy Nyongesa Foundation is dedicated to empowering youth and women
-            through Education, Mentorship, Entrepreneurship, and Leadership,
-            fostering a future where every voice leads and inspires.
+            We envision a just society, free from discrimination. Our programmes
+            for PLWDs aim at solving;<br></br>
+            <span className="font-semibold">#SDG 10: Reduced inequalities</span>
           </p>
           <button
             onClick={openModal}
-            className="text-accentTwo py-4 mt-8 border-2 border-accentTwo px-12 text-lg font-semibold rounded-lg"
+            className="text-accentTwo py-4 mt-8 border-2 border-accentTwo px-12 text-lg font-semibold rounded-lg hover:text-accentOne hover:border-accentOne"
           >
             View Gallery
           </button>
