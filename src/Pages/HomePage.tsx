@@ -6,6 +6,7 @@ import Objectives from "../assets/images/objective.png";
 import Check from "../assets/images/check.svg";
 import ProjectImageOne from "../assets/images/Projects/front-image-1.png";
 import ProjectImageTwo from "../assets/images/Projects/front-image-2.png";
+import BookLaunch from "../assets/images/Book-launch.png";
 import Marquee from "react-fast-marquee";
 
 import Gallery1 from "../assets/images/Gallery/Rectangle 17-1.png";
@@ -18,6 +19,12 @@ import Gallery7 from "../assets/images/Gallery/Rectangle 20-1.png";
 import Gallery8 from "../assets/images/Gallery/Rectangle 20-2.png";
 import Gallery9 from "../assets/images/Gallery/Rectangle 20-3.png";
 import Gallery10 from "../assets/images/Gallery/Rectangle 20.png";
+
+// Icons
+import Date from "../assets/images/icons/date.svg";
+import Time from "../assets/images/icons/time.svg";
+import Location from "../assets/images/icons/location.svg";
+import Dress from "../assets/images/icons/Dress.svg";
 
 const HomePage = () => {
   return (
@@ -183,7 +190,7 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div>
+          <div className="bg-accentBackgroundOne">
             <div className="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl">
               <div className="mb-4 mt-4 lg:mt-0">
                 <p className="uppercase font-semibold mb-1 text-textTwo">
@@ -220,6 +227,72 @@ const HomePage = () => {
                 <img src={Gallery9} alt="" className="mx-2" />
                 <img src={Gallery10} alt="" className="mx-2" />
               </Marquee>
+            </div>
+          </div>
+
+          <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl">
+            <div className="lg:flex items-center lg:gap-10">
+              <div className="">
+                <div className="mb-4 mt-4 lg:mt-0">
+                  <p className="uppercase font-semibold mb-1 text-textTwo">
+                    Upcoming Event
+                  </p>
+                  <div className="w-20 h-2 bg-accentOne rounded-full "></div>
+                </div>
+                <h1 className="lg:w-4/5 lg:col-span-2 text-textOne font-bold lg:font-black text-4xl lg:text-6xl leading-none text-left">
+                  Ready to Join our{" "}
+                  <span className="text-accentOne"> Book Launch</span> Event
+                </h1>
+                <p className="mt-2 lg:mt-6 text-lg lg:w-4/5">
+                  Join us for an evening filled with engaging conversations, a
+                  reading session by the author, and a chance to get your copy
+                  signed. It's an opportunity not just to celebrate the book's
+                  release, but also to immerse yourself in a community that
+                  cherishes the power of storytelling.
+                </p>
+                <div className="mt-4 text-lg">
+                  <div className="flex gap-2">
+                    <img src={Date} alt="" className="w-7" />
+                    <p>
+                      Date:{" "}
+                      <span className="font-semibold">23RD JANUARY 2024</span>
+                    </p>
+                  </div>
+                  <div className="flex gap-2 mt-2">
+                    <img src={Time} alt="" className="w-7" />
+                    <p>
+                      Time: <span className="font-semibold">2:00PM</span>
+                    </p>
+                  </div>
+                  <div className="flex gap-2 mt-2">
+                    <img src={Location} alt="" className="w-7" />
+                    <p>
+                      Location:{" "}
+                      <span className="font-semibold">Noble Hotel Eldoret</span>
+                    </p>
+                  </div>
+                  <div className="flex gap-2 mt-2">
+                    <img src={Dress} alt="" className="w-7" />
+                    <p>
+                      Dress Code:{" "}
+                      <span className="font-semibold">
+                        Elegant with a touch of Lilac
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex mt-4 lg:mt-8 mb-6 lg:mb-0">
+                    <a
+                      href=""
+                      className="flex items-center py-3 lg:py-4 px-8 lg:px-6 rounded-full border border-accentOne hover:bg-[#1E1E1E] text-accentOne hover:text-[#fff] hover:border border-[##BABD8D] font-bold"
+                    >
+                      <p className="text-xl">Discover More</p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <img src={BookLaunch} alt="" />
             </div>
           </div>
         </div>
