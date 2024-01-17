@@ -6,6 +6,18 @@ import Objectives from "../assets/images/objective.png";
 import Check from "../assets/images/check.svg";
 import ProjectImageOne from "../assets/images/Projects/front-image-1.png";
 import ProjectImageTwo from "../assets/images/Projects/front-image-2.png";
+import Marquee from "react-fast-marquee";
+
+import Gallery1 from "../assets/images/Gallery/Rectangle 17-1.png";
+import Gallery2 from "../assets/images/Gallery/Rectangle 17.png";
+import Gallery3 from "../assets/images/Gallery/Rectangle 18-1.png";
+import Gallery4 from "../assets/images/Gallery/Rectangle 18.png";
+import Gallery5 from "../assets/images/Gallery/Rectangle 19-1.png";
+import Gallery6 from "../assets/images/Gallery/Rectangle 19.png";
+import Gallery7 from "../assets/images/Gallery/Rectangle 20-1.png";
+import Gallery8 from "../assets/images/Gallery/Rectangle 20-2.png";
+import Gallery9 from "../assets/images/Gallery/Rectangle 20-3.png";
+import Gallery10 from "../assets/images/Gallery/Rectangle 20.png";
 
 const HomePage = () => {
   return (
@@ -168,6 +180,46 @@ const HomePage = () => {
                 <div className="py-10"></div>
                 <ProjectTwo />
               </div>
+            </div>
+          </div>
+
+          <div>
+            <div className="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl">
+              <div className="mb-4 mt-4 lg:mt-0">
+                <p className="uppercase font-semibold mb-1 text-textTwo">
+                  Daisy Nyongesa Foundation
+                </p>
+                <div className="w-20 h-2 bg-accentOne rounded-full "></div>
+              </div>
+              <h1 className="lg:col-span-2 text-textOne font-bold lg:font-black text-4xl lg:text-6xl leading-none text-left">
+                Our Gallery
+              </h1>
+            </div>
+            <div>
+              <Marquee pauseOnHover>
+                <img src={Gallery1} alt="" className="mx-2" />
+                <img src={Gallery2} alt="" className="mx-2" />
+                <img src={Gallery3} alt="" className="mx-2" />
+                <img src={Gallery4} alt="" className="mx-2" />
+                <img src={Gallery5} alt="" className="mx-2" />
+                <img src={Gallery6} alt="" className="mx-2" />
+                <img src={Gallery7} alt="" className="mx-2" />
+                <img src={Gallery8} alt="" className="mx-2" />
+                <img src={Gallery9} alt="" className="mx-2" />
+                <img src={Gallery10} alt="" className="mx-2" />
+              </Marquee>
+              <Marquee pauseOnHover direction="right" className="mt-4">
+                <img src={Gallery1} alt="" className="mx-2" />
+                <img src={Gallery2} alt="" className="mx-2" />
+                <img src={Gallery3} alt="" className="mx-2" />
+                <img src={Gallery4} alt="" className="mx-2" />
+                <img src={Gallery5} alt="" className="mx-2" />
+                <img src={Gallery6} alt="" className="mx-2" />
+                <img src={Gallery7} alt="" className="mx-2" />
+                <img src={Gallery8} alt="" className="mx-2" />
+                <img src={Gallery9} alt="" className="mx-2" />
+                <img src={Gallery10} alt="" className="mx-2" />
+              </Marquee>
             </div>
           </div>
         </div>
