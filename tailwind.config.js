@@ -12,6 +12,7 @@ export default {
       'textOne': '#333333',
       'textTwo': '#454545',
       'textThree': '#ffffff',
+      'textFour': '#000000',
       'accentOne': '#CD9933',
       'accentTwo': '#0217F9',
       'accentBackgroundOne': '#FFF9EC',
