@@ -280,20 +280,20 @@ const HomePage = () => {
                       <span className="font-semibold">23RD JANUARY 2024</span>
                     </p>
                   </div>
-                  <div className="flex gap-2 mt-2">
+                  <div className="flex gap-2 mt-2 items-start">
                     <img src={Time} alt="" className="w-7" />
                     <p>
                       Time: <span className="font-semibold">2:00PM</span>
                     </p>
                   </div>
-                  <div className="flex gap-2 mt-2">
+                  <div className="flex gap-2 mt-2 items-start">
                     <img src={Location} alt="" className="w-7" />
                     <p>
                       Location:{" "}
                       <span className="font-semibold">Noble Hotel Eldoret</span>
                     </p>
                   </div>
-                  <div className="flex gap-2 mt-2">
+                  <div className="flex gap-2 mt-2 items-start">
                     <img src={Dress} alt="" className="w-7" />
                     <p>
                       Dress Code:{" "}
