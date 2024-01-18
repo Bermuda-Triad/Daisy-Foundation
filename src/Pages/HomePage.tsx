@@ -27,7 +27,10 @@ const HomePage = () => {
       <div>
         <div>
           <div className="w-full h-4 bg-accentOne"></div>
-          <div className="grid lg:grid-cols-2 mx-auto md:pl-8 xl:pl-20 sm:max-w-xl md:max-w-full">
+          <div
+            className="grid lg:grid-cols-2 mx-auto md:pl-8 xl:pl-20 sm:max-w-xl md:max-w-full"
+            id="top"
+          >
             <div className="max-w-xl mx-auto lg:max-w-screen-2xl px-4">
               <div className="lg:max-w-2xl lg:mb-0 lg:ml-8">
                 <div className="lg:mb-24 mt-4 mb-8">
@@ -70,7 +73,10 @@ const HomePage = () => {
           </div>
 
           <div>
-            <div className="grid lg:grid-cols-2 md:pl-8 xl:pl-20 sm:max-w-xl md:max-w-full bg-accentBackgroundOne">
+            <div
+              className="grid lg:grid-cols-2 md:pl-8 xl:pl-20 sm:max-w-xl md:max-w-full bg-accentBackgroundOne"
+              id="about"
+            >
               <div className="lg:flex lg:w-2/3 gap-4 max-w-xl mx-auto lg:max-w-screen-2xl px-4 py-8 lg:py-16">
                 <img
                   src={Mission}
@@ -205,7 +211,7 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div className="bg-accentBackgroundOne">
+          <div className="bg-accentBackgroundOne" id="projects">
             <div className="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl">
               <h1 className="lg:col-span-2 text-textOne font-bold text-4xl lg:text-6xl leading-none text-left">
                 Our Projects
@@ -214,6 +220,13 @@ const HomePage = () => {
                 <ProjectOne />
                 <div className="py-10"></div>
                 <ProjectTwo />
+              </div>
+              <div className="flex justify-center my-10">
+                <Link to="/projects">
+                  <button className="text-textThree bg-accentOne hover:bg-accentBackgroundOne hover:border-2 border-accentOne py-4 mt-8  px-12 text-lg font-semibold rounded-lg hover:text-accentOne hover:border-accentOne">
+                    All Projects
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -233,7 +246,10 @@ const HomePage = () => {
             <Gallery />
           </div>
 
-          <div className="px-4 py-8 lg:py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl">
+          <div
+            className="px-4 py-8 lg:py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl"
+            id="events"
+          >
             <div className="lg:flex items-center lg:gap-10">
               <div className="">
                 <div className="mb-4 mt-4 lg:mt-0">
@@ -340,11 +356,15 @@ const HomePage = () => {
                 Our Partners
               </h1>
               <div className="grid grid-cols-3 items-center lg:flex justify-center gap-10 mt-8">
-                <img src={LogoOne} alt="" className="w-28 mx-auto" />
-                <img src={LogoFive} alt="" className="w-28 mx-auto" />
-                <img src={LogoThree} alt="" className="w-28 mx-auto" />
-                <img src={LogoFour} alt="" className="w-28 mx-auto" />
-                <img src={LogoTwo} alt="" className="w-28 mx-auto" />
+                <img src={LogoOne} alt="" className="w-28 lg:w-auto mx-auto" />
+                <img src={LogoFive} alt="" className="w-28 mx-auto lg:w-auto" />
+                <img
+                  src={LogoThree}
+                  alt=""
+                  className="w-28 mx-auto lg:w-auto"
+                />
+                <img src={LogoFour} alt="" className="w-28 mx-auto lg:w-auto" />
+                <img src={LogoTwo} alt="" className="w-28 mx-auto lg:w-auto" />
               </div>
             </div>
           </div>
@@ -381,6 +401,7 @@ import Star from "../assets/images/icons/star.svg";
 import { Footer } from "../components/Footer";
 import { ProjectOne, ProjectTwo } from "../components/ProjectCards";
 import Gallery from "../components/Gallery";
+import { Link } from "react-router-dom";
 
 export const Testimonial = () => {
   return (

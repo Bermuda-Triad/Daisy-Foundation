@@ -12,23 +12,23 @@ export const Footer = () => {
         </div>
         <div className="space-y-4 text-lg">
           <p className="font-bold tracking-wide text-accentOne">Quick Link</p>
-          <div className="">
-            <a className="" href="#">
+          <div className="hover:text-accentOne">
+            <a className="" href="#top">
               Home
             </a>
           </div>
           <div className="">
-            <a className="" href="#">
+            <a className="hover:text-accentOne" href="#events">
               Upcoming Events
             </a>
           </div>
           <div className="">
-            <a className="" href="#">
+            <a className="hover:text-accentOne" href="#projects">
               Projects
             </a>
           </div>
           <div className="">
-            <a className="" href="#">
+            <a className="hover:text-accentOne" href="#about">
               About Us
             </a>
           </div>
@@ -37,7 +37,7 @@ export const Footer = () => {
           <p className="font-bold tracking-wide text-accentOne">Contact Info</p>
           <div className="">
             <p className="mr-1 text-textOne font-bold">Phone:</p>
-            <p className="">+254 711 922914</p>
+            <p className="">+254 712 139 439</p>
           </div>
           <div className="">
             <p className="mr-1 text-textOne font-bold">Email:</p>
@@ -56,19 +56,19 @@ export const Footer = () => {
           </p>
           <div className="flex items-center mt-4 space-x-3">
             <a
-              href="/"
+              href="https://www.facebook.com/profile.php?id=100077107750212&mibextid=ZbWKwL"
               className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
             >
-              <img src={Facebook} alt="" className="w-10" />
+              <img src={Facebook} alt="" className="w-10 " />
             </a>
             <a
-              href="/"
+              href="https://www.instagram.com/sen.daisynyongesa?igsh=MWVqbHZ2NnJlc3ZvNQ=="
               className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
             >
               <img src={Instagram} alt="" className="w-10" />
             </a>
             <a
-              href="/"
+              href="https://www.youtube.com/@Sen.daisynyongesa"
               className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400"
             >
               <img src={YouTube} alt="" className="w-10" />
