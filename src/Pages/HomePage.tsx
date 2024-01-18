@@ -59,8 +59,8 @@ const HomePage = () => {
                   </p>
                   <div className="flex mt-4 lg:mt-8 mb-6 lg:mb-0 justify-center lg:justify-start">
                     <a
-                      href=""
-                      className="flex items-center py-3 lg:py-4 px-8 lg:px-6 rounded-full border border-accentOne hover:bg-[#1E1E1E] text-accentOne hover:text-[#fff] hover:border border-[##BABD8D] font-bold"
+                      href="#footer"
+                      className="flex items-center py-3 lg:py-4 px-8 lg:px-6 rounded-full border border-accentOne hover:bg-accentOne text-accentOne hover:text-[#fff] hover:border border-[##BABD8D] font-bold"
                     >
                       <p className="text-xl">Get in Touch</p>
                     </a>

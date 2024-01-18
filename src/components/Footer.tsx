@@ -5,7 +5,10 @@ import YouTube from "../assets/images/icons/youtube-icon.svg";
 
 export const Footer = () => {
   return (
-    <div className="px-4 pt-16 pb-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8">
+    <div
+      className="px-4 pt-16 pb-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 "
+      id="footer"
+    >
       <div className="grid gap-10 row-gap-6 mb-8 grid-cols-1 lg:grid-cols-4">
         <div className="hidden lg:block">
           <img src={Logo} alt="" />
