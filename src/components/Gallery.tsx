@@ -21,18 +21,8 @@ const Gallery = () => {
           <img src={Gallery3} alt="" className="mx-2" />
           <img src={Gallery4} alt="" className="mx-2" />
           <img src={Gallery5} alt="" className="mx-2" />
-          <img src={Gallery6} alt="" className="mx-2" />
-          <img src={Gallery7} alt="" className="mx-2" />
-          <img src={Gallery8} alt="" className="mx-2" />
-          <img src={Gallery9} alt="" className="mx-2" />
-          <img src={Gallery10} alt="" className="mx-2" />
         </Marquee>
         <Marquee pauseOnHover direction="right" className="mt-4">
-          <img src={Gallery1} alt="" className="mx-2" />
-          <img src={Gallery2} alt="" className="mx-2" />
-          <img src={Gallery3} alt="" className="mx-2" />
-          <img src={Gallery4} alt="" className="mx-2" />
-          <img src={Gallery5} alt="" className="mx-2" />
           <img src={Gallery6} alt="" className="mx-2" />
           <img src={Gallery7} alt="" className="mx-2" />
           <img src={Gallery8} alt="" className="mx-2" />

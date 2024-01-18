@@ -314,7 +314,7 @@ const HomePage = () => {
               </div>
               <img src={BookLaunch} alt="" />
             </div>
-            <div className="flex-col-reverse flex lg:flex-row items-center lg:gap-10 py-10">
+            <div className="flex-col-reverse flex lg:flex-row items-center lg:gap-20 py-10">
               <img src={Poster} alt="" />
               <div>
                 <h1 className="lg:w-4/5 lg:col-span-2 text-textOne font-bold text-4xl lg:text-6xl leading-none text-left">

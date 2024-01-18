@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import Logo from "../assets/images/Logos/original-logo.svg";
 import {
   ProjectFour,
   ProjectOne,
@@ -10,19 +11,18 @@ const ProjectsPage = () => {
   return (
     <div>
       <div>
-        <div className="bg-accentBackgroundOne py-20">
-          <h1 className=" text-textFour font-extrabold lg:font-black text-4xl lg:text-7xl xl:text-[72px] leading-none text-center">
+        <div className="bg-accentBackgroundOne lg:pb-16">
+          <img src={Logo} alt="" className="mx-auto lg:py-10" />
+          <h1 className=" text-accentOne font-extrabold lg:font-black text-4xl lg:text-7xl xl:text-[72px] leading-none text-center">
             All Projects
           </h1>
 
-          {/* <p className="text-textTwo mt-4 text-lg  text-center w-1/2 mx-auto">
-            Daisy Nyongesa Foundation seeks to address societal needs. This is
-            after identifying the existing gaps in the 24 constituencies of
-            Western Kenya and analyzing the best approach in mitigating them. We
-            are dedicated to empowering youth and women through Edication,
-            Mentorship and Leadership, fostering a future where every voice
-            leads and inspires.
-          </p> */}
+          <p className="text-textTwo mt-4 text-lg  text-center lg:w-1/2 mx-auto px-4">
+            In our projects at Daisy Nyongesa Foundation, we focus on empowering
+            youth and women through innovative and impactful programs. Each
+            initiative showcases our commitment to nurturing talent and driving
+            positive societal change.
+          </p>
           <div className="flex mt-4 lg:mt-8 mb-6 lg:mb-0 justify-center">
             <Link to="/">
               <a
