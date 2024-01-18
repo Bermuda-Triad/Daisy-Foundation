@@ -6,6 +6,7 @@ import Objectives from "../assets/images/objective.png";
 import Check from "../assets/images/check.svg";
 
 import BookLaunch from "../assets/images/Book-launch.png";
+import Poster from "../assets/images/Poster.png";
 import Founder from "../assets/images/founder.png";
 
 // Icons
@@ -221,9 +222,9 @@ const HomePage = () => {
                 <div className="py-10"></div>
                 <ProjectTwo />
               </div>
-              <div className="flex justify-center my-10">
-                <Link to="/projects">
-                  <button className="text-textThree bg-accentOne hover:bg-accentBackgroundOne hover:border-2 border-accentOne py-4 mt-8  px-12 text-lg font-semibold rounded-lg hover:text-accentOne hover:border-accentOne">
+              <div className="flex justify-center lg:my-10 w-full">
+                <Link to="/projects" className="w-full lg:w-auto">
+                  <button className="w-full text-textThree bg-accentOne hover:bg-accentBackgroundOne hover:border-2 border-accentOne py-4 mt-8  px-12 text-lg font-semibold rounded-lg hover:text-accentOne hover:border-accentOne">
                     All Projects
                   </button>
                 </Link>
@@ -232,7 +233,7 @@ const HomePage = () => {
           </div>
 
           <div className="bg-accentBackgroundOne">
-            <div className="px-4 py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl">
+            <div className="px-4 py-6 lg:py-12 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl">
               <div className="mb-4 mt-4 lg:mt-0">
                 <p className="uppercase font-semibold mb-1 text-textTwo">
                   Daisy Nyongesa Foundation
@@ -303,7 +304,7 @@ const HomePage = () => {
                 <div>
                   <div className="flex mt-4 lg:mt-8 mb-6 lg:mb-0">
                     <a
-                      href=""
+                      href="https://www.facebook.com/people/Sen-Daisy-Nyongesa-Nabwera/100077107750212/?mibextid=ZbWKwL"
                       className="flex items-center py-3 lg:py-4 px-8 lg:px-6 rounded-full border border-accentOne hover:bg-[#1E1E1E] text-accentOne hover:text-[#fff] hover:border border-[##BABD8D] font-bold"
                     >
                       <p className="text-xl">Discover More</p>
@@ -312,6 +313,33 @@ const HomePage = () => {
                 </div>
               </div>
               <img src={BookLaunch} alt="" />
+            </div>
+            <div className="flex-col-reverse flex lg:flex-row items-center lg:gap-10 py-10">
+              <img src={Poster} alt="" />
+              <div>
+                <h1 className="lg:w-4/5 lg:col-span-2 text-textOne font-bold text-4xl lg:text-6xl leading-none text-left">
+                  <span className="text-accentOne"> 3 IN 1</span> Celebration
+                </h1>
+                <p className="text-lg mt-3 lg:mt-8">
+                  Join us for a landmark celebration as we honor three momentous
+                  occasions: the birthday of our esteemed founder, the launch of
+                  an inspiring new book authored by the founder, and the grand
+                  unveiling of Daisy Nyongesa Foundation. This unique event
+                  brings together the joy of a personal milestone, the
+                  intellectual excitement of a book launch, and the noble vision
+                  of our foundation's journey. Be part of this exceptional
+                  evening as we mark new beginnings and shared aspirations for a
+                  brighter future.
+                </p>
+                <div className="flex mt-4 lg:mt-8 mb-6 lg:mb-0">
+                  <a
+                    href="https://www.instagram.com/sen.daisynyongesa/"
+                    className="flex items-center py-3 lg:py-4 px-8 lg:px-6 rounded-full border border-accentOne hover:bg-[#1E1E1E] text-accentOne hover:text-[#fff] hover:border border-[##BABD8D] font-bold"
+                  >
+                    <p className="text-xl">Discover More</p>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
 

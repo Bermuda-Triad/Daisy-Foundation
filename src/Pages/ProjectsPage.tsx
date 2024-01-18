@@ -12,7 +12,7 @@ const ProjectsPage = () => {
       <div>
         <div className="bg-accentBackgroundOne py-20">
           <h1 className=" text-textFour font-extrabold lg:font-black text-4xl lg:text-7xl xl:text-[72px] leading-none text-center">
-            Projects
+            All Projects
           </h1>
 
           {/* <p className="text-textTwo mt-4 text-lg  text-center w-1/2 mx-auto">
