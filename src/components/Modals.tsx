@@ -48,8 +48,19 @@ const Modals: React.FC<ModalProps> = ({
         className="relative top-20 lg:mx-auto border mx-4 p-1 lg:w-3/4 shadow-lg rounded-md bg-textThree"
         ref={modalRef}
       >
-        <div className="grid grid-cols-2 lg:grid-cols-3">
-          <img src={image1} alt="" />
+        <div className="grid grid-cols-1 lg:grid-cols-3">
+          <div className="">
+            <div className="flex justify-end lg:hidden">
+              <button
+                onClick={onClose}
+                className="px-4 my-2 py-1.5 border rounded bg-accentOne text-textThree"
+              >
+                Close
+              </button>
+            </div>
+
+            <img src={image1} alt="" />
+          </div>
           <img src={image2} alt="" />
           <img src={image3} alt="" />
           <img src={image4} alt="" />

@@ -49,7 +49,7 @@ export const Footer = () => {
           <div className="">
             <p className="mr-1 text-textOne font-bold">Address:</p>
             <p className="">
-              P.O.BOX 7 - 30205<br></br> MATUNDA, KENYA
+              P.O BOX 7 - 30205<br></br> MATUNDA, KENYA
             </p>
           </div>
         </div>

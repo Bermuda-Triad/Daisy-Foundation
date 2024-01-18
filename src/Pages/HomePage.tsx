@@ -21,6 +21,8 @@ import LogoTwo from "../assets/images/Logos/logos/Martine's Angel's Program.svg"
 import LogoThree from "../assets/images/Logos/logos/NYOROTIS COOPERATIVE COCIETY.svg";
 import LogoFour from "../assets/images/Logos/logos/Screenshot from 2024-01-14 14-53-36 1.svg";
 import LogoFive from "../assets/images/Logos/logos/Screenshot from 2024-01-14 14-54-36.svg";
+import LogoSix from "../assets/images/Logos/logos/Screenshot from 2024-01-18 11-47-18.png";
+import LogoSeven from "../assets/images/Logos/logos/logo8.jpeg";
 
 const HomePage = () => {
   return (
@@ -385,6 +387,7 @@ const HomePage = () => {
               </h1>
               <div className="grid grid-cols-3 items-center lg:flex justify-center gap-10 mt-8">
                 <img src={LogoOne} alt="" className="w-28 lg:w-auto mx-auto" />
+                <img src={LogoSix} alt="" className="w-28 mx-auto lg:w-36" />
                 <img src={LogoFive} alt="" className="w-28 mx-auto lg:w-auto" />
                 <img
                   src={LogoThree}
@@ -393,6 +396,7 @@ const HomePage = () => {
                 />
                 <img src={LogoFour} alt="" className="w-28 mx-auto lg:w-auto" />
                 <img src={LogoTwo} alt="" className="w-28 mx-auto lg:w-auto" />
+                <img src={LogoSeven} alt="" className="w-28 mx-auto lg:w-32" />
               </div>
             </div>
           </div>
