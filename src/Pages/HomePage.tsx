@@ -37,11 +37,7 @@ const HomePage = () => {
             <div className="max-w-xl mx-auto lg:max-w-screen-2xl px-4">
               <div className="lg:max-w-2xl lg:mb-0 lg:ml-8">
                 <div className="lg:mb-24 mt-4 mb-8">
-                  <img
-                    src={Logo2}
-                    alt=""
-                    className="mx-auto lg:mx-0 w-32 lg:w-auto"
-                  />
+                  <img src={Logo2} alt="" className="mx-auto lg:mx-0 " />
                 </div>
                 <div>
                   <h1 className="text-textFour font-extrabold lg:font-black text-4xl lg:text-7xl xl:text-[72px] leading-none text-center lg:text-left">

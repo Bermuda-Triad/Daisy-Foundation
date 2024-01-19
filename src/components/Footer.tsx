@@ -79,7 +79,7 @@ export const Footer = () => {
           </div>
         </div>
         <div className="lg:hidden flex justify-center">
-          <img src={Logo} alt="" className="w-32" />
+          <img src={Logo} alt="" className="" />
         </div>
       </div>
     </div>
