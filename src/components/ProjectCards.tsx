@@ -46,7 +46,7 @@ export const ProjectOne = () => {
   return (
     <div>
       <div className="lg:flex gap-20 items-center">
-        <img src={ProjectImageOne} alt="" />
+        <img src={ProjectImageOne} alt="" className="w-full lg:w-auto" />
         <div className="">
           <p className="mb-4">Donations / Farming</p>
           <p className="lg:text-4xl text-2xl font-bold">
@@ -118,7 +118,7 @@ export const ProjectTwo = () => {
             image6={Image61}
           />
         </div>
-        <img src={ProjectImageTwo} alt="" />
+        <img src={ProjectImageTwo} alt="" className="w-full lg:w-auto" />
       </div>
     </div>
   );
@@ -132,7 +132,7 @@ export const ProjectThree = () => {
   return (
     <div>
       <div className="lg:flex gap-20 items-center">
-        <img src={ProjectImageThree} alt="" />
+        <img src={ProjectImageThree} alt="" className="w-full lg:w-auto" />
         <div className="">
           <p className="mb-4">Donations / Farming</p>
           <p className="lg:text-4xl text-2xl font-bold">
@@ -206,7 +206,7 @@ export const ProjectFour = () => {
             image6={image266}
           />
         </div>
-        <img src={ProjectImageFour} alt="" />
+        <img src={ProjectImageFour} alt="" className="w-full lg:w-auto" />
       </div>
     </div>
   );

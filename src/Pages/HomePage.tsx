@@ -75,7 +75,7 @@ const HomePage = () => {
             </div>
           </div>
 
-          <div>
+          <div className="">
             <div
               className="grid lg:grid-cols-2 md:pl-8 xl:pl-20 sm:max-w-xl md:max-w-full bg-accentBackgroundOne"
               id="about"
@@ -98,7 +98,7 @@ const HomePage = () => {
                   </p>
                 </div>
               </div>
-              <div className="bg-accentBackgroundTwo">
+              <div className="bg-accentBackgroundTwo w-full">
                 <div className="lg:flex lg:w-2/3 gap-4 py-8 lg:py-16 lg:px-16 px-4">
                   <img
                     src={Vision}
@@ -314,10 +314,10 @@ const HomePage = () => {
                   </div>
                 </div>
               </div>
-              <img src={BookLaunch} alt="" />
+              <img src={BookLaunch} alt="" className="w-full lg:w-auto" />
             </div>
             <div className="flex-col-reverse flex lg:flex-row items-center lg:gap-20 py-10">
-              <img src={Poster} alt="" />
+              <img src={Poster} alt="" className="w-full lg:w-auto" />
               <div>
                 <h1 className="lg:w-4/5 lg:col-span-2 text-textOne font-bold text-4xl lg:text-6xl leading-none text-left">
                   <span className="text-accentOne"> 3 IN 1</span> Celebration
