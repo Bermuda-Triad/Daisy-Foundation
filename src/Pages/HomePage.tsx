@@ -369,9 +369,27 @@ const HomePage = () => {
               </h1>
 
               <div className="grid lg:grid-cols-3 gap-4 mt-8">
-                <Testimonial />
-                <Testimonial />
-                <Testimonial />
+                <Testimonial
+                  userName={"Rosemary Nafula"}
+                  company={"Binyenya Village"}
+                  words={
+                    "I am a beneficiary of Daisy Nyongesa Foundation under their Mama ni Taa Initiative. I got myself some donations that boosted my kibanda business at Binyenya Centre."
+                  }
+                />
+                <Testimonial
+                  userName={"Richard Wafula Wanyonyi"}
+                  company={"Kongoni Ward"}
+                  words={
+                    "Senator Daisy's kind donation of wheelchair has really eased my mobility. Through her, I also got assistance and now I have my disability card."
+                  }
+                />
+                <Testimonial
+                  userName={"Rose Navalahyo"}
+                  company={"Lugari Constituency"}
+                  words={
+                    "My daughter's school fees for Form 4; Term 2 and 3 for 2022 gpt covered by Senator Daisy Nyongesa. Thank you so much, may God bless you"
+                  }
+                />
               </div>
             </div>
           </div>
@@ -431,16 +449,19 @@ import { ProjectOne, ProjectTwo } from "../components/ProjectCards";
 import Gallery from "../components/Gallery";
 import { Link } from "react-router-dom";
 
-export const Testimonial = () => {
+interface TestimonialProps {
+  userName: string;
+  company: string;
+  words: string;
+}
+
+export const Testimonial = (props: TestimonialProps) => {
   return (
     <div>
       <div className="text-lg bg-textThree p-6 rounded-lg">
-        <p className="font-bold">Grace Kwamboka</p>
-        <p className=" font-medium">MFCS</p>
-        <p className=" mt-4">
-          “Less than 24h turn around. Easy commu. Did exactly as offered, all
-          around a perfect experience.”
-        </p>
+        <p className="font-bold">{props.userName}</p>
+        <p className=" font-medium">{props.company}</p>
+        <p className=" mt-4">"{props.words}"</p>
         <div className="flex items-center gap-2 mt-8">
           <img src={Star} alt="" />
           <img src={Star} alt="" />
