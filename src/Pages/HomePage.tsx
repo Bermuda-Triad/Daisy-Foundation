@@ -1,5 +1,5 @@
 import Hero from "../assets/images/Hero.png";
-import Logo2 from "../assets/images/Logos/original-logo.svg";
+import Logo2 from "../assets/images/LogoMain.svg";
 import Mission from "../assets/images/illustrations/mission.svg";
 import Vision from "../assets/images/illustrations/vision.svg";
 import Objectives from "../assets/images/objective.png";
@@ -40,7 +40,7 @@ const HomePage = () => {
                   <img
                     src={Logo2}
                     alt=""
-                    className="mx-auto lg:mx-0 w-32 lg:w-40"
+                    className="mx-auto lg:mx-0 w-32 lg:w-auto"
                   />
                 </div>
                 <div>
@@ -55,7 +55,7 @@ const HomePage = () => {
                     This is after identifying the existing gaps in the 24
                     constituencies of Western Kenya and analyzing the best
                     approach in mitigating them. We are dedicated to empowering
-                    youth and women through Edication, Mentorship and
+                    youth and women through Education, Mentorship and
                     Leadership, fostering a future where every voice leads and
                     inspires.
                   </p>
@@ -141,7 +141,7 @@ const HomePage = () => {
                 <p className="font-bold text-2xl text-center">Elimika</p>
                 <p className="text-center px-4 mt-2">
                   When we educate and enlighten young people, we educate the
-                  whole community
+                  whole community.
                 </p>
               </div>
               <div className="bg-accentBackgroundOne py-8">
@@ -150,8 +150,8 @@ const HomePage = () => {
                 </div>
                 <p className="font-bold text-2xl text-center">Badilika</p>
                 <p className="text-center px-4 mt-2">
-                  Educated and involved minds aspire to aspire invoved nation,
-                  they are change makers and advocates of development.
+                  Educated and involved minds aspire to inspire and transform
+                  nation. They are change makers and advocates of development.
                 </p>
               </div>
             </div>
